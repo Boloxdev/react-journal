@@ -9,12 +9,12 @@ import { addNewEmptyNote, deleteNoteById, savingNewNote, setActiveNote, setNotes
 export const startNewNote = () => {
     return async (dispatch, getState) => {
         const uid = getState().auth.uid;
-        console.log(uid);
+        
 
         const newNote = {
-            title: '',
-            body: '',
-            imageUrls: [],
+            title: 'Title',
+            body: 'Body',
+            imageUrls: ['image'],
             date: new Date().getTime()
         }
 
